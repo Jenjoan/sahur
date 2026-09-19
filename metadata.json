@@ -1,0 +1,6 @@
+{
+  "name": "One More Choice",
+  "description": "A realistic, third-person interactive life adventure set in an explorable Singapore neighbourhood, following four interconnected lives making crucial anti-drug decisions through character movement, mission-based exploration, and meaningful choices.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

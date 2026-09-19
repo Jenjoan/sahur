@@ -1,0 +1,153 @@
+import { CharacterProfile, DossierEntry } from '../types';
+
+export const CHARACTERS: CharacterProfile[] = [
+  {
+    id: 'maya',
+    name: 'MAYA',
+    tagline: 'Small Choices, Brighter Days',
+    badge: 'THE INVITATION',
+    role: 'Track Captain',
+    age: '16 (Sec 4)',
+    summary: 'A Secondary 4 student and anchor runner for the school relay team. Dedicated, observant, and fiercely loyal to her teammates.',
+    keyRelationship: "Jay's close friend and running partner from school.",
+    status: 'Ready to run',
+    avatarGlow: 'ring-teal-400 shadow-teal-500/30',
+    accentColor: 'text-teal-400',
+    themeColor: 'teal',
+    avatarSeed: 'maya',
+    unlocked: true,
+    traits: ['Empathetic', 'Observant', 'Athletic', 'Principled']
+  },
+  {
+    id: 'jay',
+    name: 'JAY',
+    tagline: 'Hiding in plain sight',
+    badge: 'ALREADY INVOLVED',
+    role: 'Student Athlete',
+    age: '16 (Sec 4)',
+    summary: 'Under intense exam stress, Jay tried an unmarked vape pod at a void deck gathering. He experienced terrifying heart palpitations, disorientation, and panic. Now he is concealing it out of shame.',
+    keyRelationship: "Lina's younger brother and Maya's running partner.",
+    status: 'Distressed & Concealing',
+    avatarGlow: 'ring-purple-400 shadow-purple-500/30',
+    accentColor: 'text-purple-400',
+    themeColor: 'purple',
+    avatarSeed: 'jay',
+    unlocked: true,
+    traits: ['Dedicated', 'Vulnerable', 'High-Achieving', 'Withdrawn']
+  },
+  {
+    id: 'eli',
+    name: 'ELI',
+    tagline: 'The cost of quick money',
+    badge: 'SELLING DRUGS',
+    role: 'Polytechnic Youth',
+    age: '18',
+    summary: 'Drawn in by older acquaintances with promises of easy earnings, Eli began delivering unmarked packages. He was the one who passed the adulterated pod to Jay at the void deck.',
+    keyRelationship: 'Delivered the pod to Jay; trapped by recruiter Mark.',
+    status: 'Deeply Conflicted',
+    avatarGlow: 'ring-amber-500 shadow-amber-500/30',
+    accentColor: 'text-amber-400',
+    themeColor: 'amber',
+    avatarSeed: 'eli',
+    unlocked: true,
+    traits: ['Resourceful', 'Hesitant', 'Financial Stress', 'Pressured']
+  },
+  {
+    id: 'lina',
+    name: 'LINA',
+    tagline: 'Some conversations can’t wait',
+    badge: 'SOMEONE YOU LOVE',
+    role: 'Older Sister & Student',
+    age: '20',
+    summary: "Jay's 20-year-old sister who works evening shifts while studying. She noticed Jay's sudden weight loss, late-night insomnia, and trembling hands at the dinner table.",
+    keyRelationship: "Jay's devoted older sister waiting at the dinner table.",
+    status: 'Alert & Seeking Solutions',
+    avatarGlow: 'ring-orange-400 shadow-orange-500/30',
+    accentColor: 'text-orange-400',
+    themeColor: 'orange',
+    avatarSeed: 'lina',
+    unlocked: true,
+    traits: ['Protective', 'Analytical', 'Overworked', 'Supportive']
+  }
+];
+
+export const DOSSIER_ENTRIES: DossierEntry[] = [
+  {
+    id: 'dossier-maya',
+    name: 'Maya Chen',
+    role: 'Primary Perspective • Sec 4 Track Captain',
+    traits: 'Empathetic, Observant, Level-headed',
+    keyRelationship: 'Jay (Best friend & running partner)',
+    status: 'Concerned for Jay',
+    keyDialogue: '"One second of hesitation can cost a race. But one brave choice can save a life."',
+    keyConflict: 'Navigating peer pressure without losing her social circle or track eligibility.',
+    isPlayable: true,
+    avatarColor: 'teal',
+    stamp: 'TRACK CAPTAIN'
+  },
+  {
+    id: 'dossier-jay',
+    name: 'Jay Walker',
+    role: 'Secondary Perspective • Athlete / Student',
+    traits: 'Loyal, Perfectionist, Recently Distant',
+    keyRelationship: 'Lina (Sister), Maya (Running partner)',
+    status: 'Under Medical & Mental Strain',
+    keyDialogue: '"I can\'t talk right now... I just needed the pressure in my chest to stop for one hour."',
+    keyConflict: 'Suffering acute physiological effects from an adulterated substance; hiding symptoms.',
+    isPlayable: true,
+    avatarColor: 'purple',
+    stamp: 'VULNERABLE'
+  },
+  {
+    id: 'dossier-eli',
+    name: 'Eli Tan',
+    role: 'Third Perspective • Polytechnic Student',
+    traits: 'Pragmatic, Financially Strained, Trapped',
+    keyRelationship: 'Mark (Local Recruiter / Bad Influence)',
+    status: 'Investigative & Regretful',
+    keyDialogue: '"They said it was just vape juice deliveries. Nobody warned me what was really mixed inside."',
+    keyConflict: 'A vague red stamp says "Distribution Risk" — facing Singapore Misuse of Drugs Act consequences.',
+    isPlayable: true,
+    avatarColor: 'amber',
+    stamp: 'AT RISK'
+  },
+  {
+    id: 'dossier-lina',
+    name: 'Lina Walker',
+    role: 'Fourth Perspective • Working Poly Student',
+    traits: 'Vigilant, Patient, Compassionate',
+    keyRelationship: 'Jay (Younger Brother)',
+    status: 'Supportive & Proactive',
+    keyDialogue: '"If I look away because it feels uncomfortable, who is going to catch him when he falls?"',
+    keyConflict: 'Balancing respect for her brother’s dignity with urgent intervention before harm worsens.',
+    isPlayable: true,
+    avatarColor: 'orange',
+    stamp: 'GUARDIAN'
+  },
+  {
+    id: 'dossier-mark',
+    name: 'Mark ("Dex")',
+    role: 'Older Acquaintance / Supplier',
+    traits: 'Charismatic, Coercive, Evasive',
+    keyRelationship: 'Uses youths like Eli as expendable runners',
+    status: 'Avoidance Recommended',
+    keyDialogue: '"Easy cash bro, just leave the bag at the void deck riser. No one asks questions."',
+    keyConflict: 'Exploits younger teens through social media and encrypted chat groups.',
+    isPlayable: false,
+    avatarColor: 'red',
+    stamp: 'AVOIDANCE RECOMMENDED'
+  },
+  {
+    id: 'dossier-counsellor',
+    name: 'Mrs. Koh',
+    role: 'School Wellness Counsellor',
+    traits: 'Non-judgmental, Confidential, Resourceful',
+    keyRelationship: 'Accessible to Maya, Jay, and Lina',
+    status: 'Confidential Support Available',
+    keyDialogue: '"Reaching out isn\'t an admission of defeat. It is the first step toward reclaiming your future."',
+    keyConflict: 'Overcoming the stigma and fear youths have regarding disciplinary punishment.',
+    isPlayable: false,
+    avatarColor: 'emerald',
+    stamp: 'SAFE HARBOUR'
+  }
+];
